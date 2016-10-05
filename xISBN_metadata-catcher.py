@@ -15,7 +15,7 @@ def xisbn_func(ISBN):
 
         # Here starts ISBN check
         if text.find('stat="ok"') >= 0 :    # stat="ok" is present in the xml response to the HTTP request
-                                            # if the digited ISBN is valid and if is found in the xISBN database
+                                            # if the digited ISBN is valid and if it is found in the WorldCat database
             print('\n... Book [-FOUND-]')
             newline = '\n'; content = text + newline        # formatting the text
             f = open("Books_ls.xml", "a+t")        # creating the file
